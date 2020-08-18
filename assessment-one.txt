@@ -1,0 +1,52 @@
+Tech returners assessment center technical task part 1
+
+18th August, 2020
+
+Natalie O’Rourke
+https://www.linkedin.com/in/tallyo/
+
+
+Your task is to write a function that accepts a list of job characteristics and a list of individual skills/characteristics. It should use those two different sets of characteristics to provide a match score between 0 and 100. Where 100 is the ideal match and 0 indicates definitely do NOT show this person that job
+
+
+I would want to look at industry examples and understand things like propensity score matching and existing data matching functions initially. I would also want to know how this fits into the overall tech returner model and the user journey as understanding which point the tech returner is on their own journey may influence the function's results. 
+
+While learning more about match scoring I would kick off exercises to;
+
+- Identify audience & job characteristics
+
+a) create tech returner individual personas to select suite of skills/characteristics from
+b) create typical sponsor job types to select suite of skills from
+
+How this will be done - user interviews and research to initiate work with and cross check / work closely with throughout the creation of this function. Review existing functions / competitor analysis and established industry leaders for best practice.
+
+I could then;
+
+Compare job and person characteristics and identify matches where wording may differ but purpose is still a match e.g. “office based two days per week” = “flexible working”, “wants to work remote” = “remote”
+
+Nuances of the characteristics can be weighted i.e. “office based one day a week” = “flexible working” has a heavier weighting towards flexible than “office based four days a week”, and depending on the weight I would increase or decrease the matching score 
+
+I would then be able to create a single characteristics list (to be used for both) and allocate an identifier to each of them
+
+With this single identifier, matching can then occur - e.g. if person identifier is equal to job identifier, look at weighting and calculate score where = 100 best match 
+
+When we have the matches the function can then display the results. 
+
+I would work with test users to identify at what score to hide function results from, e.g. lower than 50   
+
+I would consider showing additional results below the match score relevant ones if the function will be used to display results to tech returners too. My experience of job and role searching is very broad and often I will look at ‘Searches that returned similar results to yours’ where direct searches return very little. 
+
+When I have coded before and not known where to start I would look at other existing work to gain that understanding; 
+
+https://github.com/Ankushr785/Candidate-Match-Score-Web-App
+https://github.com/kuhumcst/DK-ClarinTools
+
+Function should also include a way to manage the list (add, edit weighting, etc.)
+
+[The closest to this that I have come was when creating a month on month, year on year brand measurement dashboard to identify brand ‘value’. Working with sharepoint developers I identified the meaningful metrics that could be input onto a dashboard and aggregated up into a score that was compared month on month, quarter on quarter etc. to give a time over motion ‘brand score’. My work focussed on identifying the metrics that had value to the business, how each statistics should be compared and weighted against each other, the collation of the data from different sources and the UX of the overall dashboard. I worked with developers who coded the functionality to input and display the calculations] 
+
+
+
+
+
+
